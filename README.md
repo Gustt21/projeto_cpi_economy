@@ -11,7 +11,7 @@
 
 Este projeto de Ciência de Dados investiga a relação entre fatores socioeconômicos (PIB, IDH) e políticos (Liberdade de Imprensa) com o **Índice de Percepção da Corrupção (CPI)** em mais de 180 países.
 
-O objetivo foi ir além da análise descritiva, criando um **Pipeline de Dados (ETL)** robusto, aplicando **Machine Learning (K-Means)** para segmentação de países e disponibilizando tudo em um **Dashboard Interativo**.
+O objetivo foi ir além da análise descritiva, criando um **Pipeline de Dados (ETL)**, aplicando **Machine Learning (K-Means)** para segmentação de países e disponibilizando tudo em um **Dashboard Interativo**.
 
 ## 🚀 Funcionalidades e Features
 
@@ -68,4 +68,5 @@ A análise geoespacial revelou um forte componente de "contágio regional".
 ├── datasets/              # Arquivos CSV processados e prontos para uso
 ├── requirements.txt       # Lista de dependências do projeto
 └── README.md              # Documentação
+
 
