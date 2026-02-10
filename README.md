@@ -30,11 +30,32 @@ O objetivo foi ir além da análise descritiva, criando um **Pipeline de Dados (
 * **Machine Learning:** Scikit-learn (K-Means, StandardScaler)
 * **Web App:** Streamlit
 
-## 📊 Principais Insights
+## 📊 Principais Insights & Storytelling
 
-1.  **A Força da Imprensa:** Identificamos uma correlação forte entre Liberdade de Imprensa e menores índices de corrupção, sugerindo que a fiscalização da mídia é tão crucial quanto o desenvolvimento econômico.
-2.  **Clusterização:** A IA separou o Brasil no grupo de "Transição", indicando que, apesar de termos economia relevante, nossos indicadores institucionais ainda nos prendem a um patamar intermediário.
-3.  **Desigualdade:** Países com altos índices de desigualdade tendem a ter maior tolerância à corrupção institucional.
+A análise revelou que a corrupção não é um problema isolado, mas sistêmico. Abaixo, os 5 principais achados baseados nos dados:
+
+### 1. O "Paradoxo da Riqueza" (Correlação GDP vs CPI)
+Existe uma correlação positiva forte (**Pearson > 0.7**) entre PIB per Capita e Honestidade.
+* **A Regra:** Países ricos tendem a ser mais transparentes devido a instituições mais fortes.
+* **A Exceção (Outliers):** Identificamos países com alta renda (ex: petroleiros ou paraísos fiscais) que mantêm índices de corrupção elevados, provando que **riqueza econômica sem accountability não gera transparência**.
+
+### 2. O Quarto Poder: A Influência da Mídia
+A variável *Freedom of Press* demonstrou ser um dos preditores mais confiáveis para a corrupção.
+* **Insight:** Não existem países no "Quadrante de Ouro" (Baixa Corrupção) que não tenham também uma Imprensa Livre. Isso sugere que a fiscalização jornalística é um pré-requisito obrigatório para a integridade pública.
+
+### 3. Clustering: Os "Três Mundos" da Corrupção
+O algoritmo **K-Means** (não-supervisionado) identificou automaticamente 3 clusters globais distintos, sem intervenção humana:
+* 🔴 **Zona de Risco:** Baixa renda, alta censura e corrupção sistêmica (Majoritariamente África Subsaariana e zonas de conflito).
+* 🟡 **A Armadilha da Renda Média (Cluster do Brasil):** Países em desenvolvimento, democracias imperfeitas e estagnação nos índices de transparência.
+* 🔵 **A Elite Institucional:** Alta renda, plena liberdade de imprensa e baixíssima tolerância à corrupção (Escandinávia, Nova Zelândia, Cingapura).
+
+### 4. A Geografia da Honestidade
+A análise geoespacial revelou um forte componente de "contágio regional".
+* Vizinhos tendem a ter notas similares, sugerindo que a corrupção (ou a integridade) transcende fronteiras nacionais e se torna cultural/regional. A América do Sul, por exemplo, apresenta uma média inferior à Europa Ocidental, mas superior a outras regiões em desenvolvimento.
+
+### 5. O Caso Brasil 🇧🇷
+* **Posição Relativa:** O Brasil encontra-se no cluster de "Transição".
+* **Análise de Resíduos:** Ao cruzar PIB vs CPI, o Brasil apresenta uma performance ligeiramente abaixo do esperado para o tamanho de sua economia. Isso indica que nossas instituições entregam menos transparência do que nossa riqueza teórica permitiria.
 
 ## 📂 Estrutura do Projeto
 
@@ -47,3 +68,4 @@ O objetivo foi ir além da análise descritiva, criando um **Pipeline de Dados (
 ├── datasets/              # Arquivos CSV processados e prontos para uso
 ├── requirements.txt       # Lista de dependências do projeto
 └── README.md              # Documentação
+
