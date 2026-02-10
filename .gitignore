@@ -1,0 +1,26 @@
+# Ambiente virtual
+.venv/
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Arquivos temporários
+*.log
+*.tmp
+
+# Configuração específica de IDEs
+.vscode/
+.idea/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# uv lockfile (opcional — ignore se quiser versionar)
+uv.lock
+

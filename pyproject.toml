@@ -1,0 +1,19 @@
+[project]
+name = "projeto-cpi-economy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.1.0",
+    "ipywidgets>=8.1.8",
+    "nbformat>=5.10.4",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.3",
+    "pdfplumber>=0.11.8",
+    "plotly>=6.5.0",
+    "pycountry-convert>=0.7.2",
+    "scikit-learn>=1.8.0",
+    "streamlit>=1.53.0",
+    "wbgapi>=1.0.12",
+]
